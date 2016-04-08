@@ -9,8 +9,8 @@
 import Foundation
 import MediaPlayer
 
-@objc(AudioPlay)
-class AudioPlay: NSObject, ActionProtocol, AVAudioPlayerDelegate {
+@objc(PlayAudio)
+class PlayAudio: NSObject, ActionProtocol, AVAudioPlayerDelegate {
     
     var standbyViewController:StandbyViewController?
     var audio: AVAudioPlayer?

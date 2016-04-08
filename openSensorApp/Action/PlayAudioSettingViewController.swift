@@ -1,5 +1,5 @@
 //
-//  AudioPlaySettingViewController.swift
+//  PlayAudioSettingViewController.swift
 //  openSensorApp
 //
 //  Created by ouba on 2016/04/05.
@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 import MediaPlayer
 
-@objc(AudioPlaySettingViewController)
-class AudioPlaySettingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ActionSettingViewControllerProtocol {
+@objc(PlayAudioSettingViewController)
+class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ActionSettingViewControllerProtocol {
     
     @IBOutlet var tableView: UITableView?
     
@@ -71,7 +71,7 @@ class AudioPlaySettingViewController: UIViewController, UITableViewDataSource, U
     internal func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedMediaItem = songList[indexPath.section][indexPath.row]
         saveEditingActionSetting([
-            "actionName" : "AudioPlay",
+            "actionName" : "PlayAudio",
             "actionSettingDisplayName" : getActionSettingDisplayName(),
             "mediaItemPersistentID" : Int((selectedMediaItem?.persistentID)!)
             ])
@@ -79,7 +79,7 @@ class AudioPlaySettingViewController: UIViewController, UITableViewDataSource, U
     }
     
     func getActionSettingDisplayName() -> String {
-        return "Audio play " + (selectedMediaItem?.title)!
+        return "Play audio " + (selectedMediaItem?.title)!
     }
 
     /*

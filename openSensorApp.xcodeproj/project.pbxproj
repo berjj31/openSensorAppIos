@@ -33,9 +33,9 @@
 		884A39931CB52ED600627882 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884A39921CB52ED600627882 /* MediaPlayer.framework */; };
 		884A399C1CB7AFEF00627882 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39971CB7AFEF00627882 /* ActionProtocol.swift */; };
 		884A399D1CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39981CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift */; };
-		884A399E1CB7AFEF00627882 /* AudioPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39991CB7AFEF00627882 /* AudioPlay.swift */; };
-		884A399F1CB7AFEF00627882 /* AudioPlaySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A399A1CB7AFEF00627882 /* AudioPlaySettingViewController.swift */; };
-		884A39A01CB7AFEF00627882 /* AudioPlaySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A399B1CB7AFEF00627882 /* AudioPlaySettingViewController.xib */; };
+		884A399E1CB7AFEF00627882 /* PlayAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39991CB7AFEF00627882 /* PlayAudio.swift */; };
+		884A399F1CB7AFEF00627882 /* PlayAudioSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A399A1CB7AFEF00627882 /* PlayAudioSettingViewController.swift */; };
+		884A39A01CB7AFEF00627882 /* PlayAudioSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A399B1CB7AFEF00627882 /* PlayAudioSettingViewController.xib */; };
 		884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A11CB7B2BB00627882 /* Proximity.swift */; };
 		884A39A51CB7B5A200627882 /* ProximitySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */; };
 		884A39A61CB7B5A200627882 /* ProximitySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */; };
@@ -103,9 +103,9 @@
 		884A39941CB7ACD000627882 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		884A39971CB7AFEF00627882 /* ActionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
 		884A39981CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSettingViewControllerProtocol.swift; sourceTree = "<group>"; };
-		884A39991CB7AFEF00627882 /* AudioPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlay.swift; sourceTree = "<group>"; };
-		884A399A1CB7AFEF00627882 /* AudioPlaySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlaySettingViewController.swift; sourceTree = "<group>"; };
-		884A399B1CB7AFEF00627882 /* AudioPlaySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlaySettingViewController.xib; sourceTree = "<group>"; };
+		884A39991CB7AFEF00627882 /* PlayAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAudio.swift; sourceTree = "<group>"; };
+		884A399A1CB7AFEF00627882 /* PlayAudioSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAudioSettingViewController.swift; sourceTree = "<group>"; };
+		884A399B1CB7AFEF00627882 /* PlayAudioSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayAudioSettingViewController.xib; sourceTree = "<group>"; };
 		884A39A11CB7B2BB00627882 /* Proximity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proximity.swift; sourceTree = "<group>"; };
 		884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximitySettingViewController.swift; sourceTree = "<group>"; };
 		884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProximitySettingViewController.xib; sourceTree = "<group>"; };
@@ -240,9 +240,9 @@
 			children = (
 				884A39971CB7AFEF00627882 /* ActionProtocol.swift */,
 				884A39981CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift */,
-				884A39991CB7AFEF00627882 /* AudioPlay.swift */,
-				884A399A1CB7AFEF00627882 /* AudioPlaySettingViewController.swift */,
-				884A399B1CB7AFEF00627882 /* AudioPlaySettingViewController.xib */,
+				884A39991CB7AFEF00627882 /* PlayAudio.swift */,
+				884A399A1CB7AFEF00627882 /* PlayAudioSettingViewController.swift */,
+				884A399B1CB7AFEF00627882 /* PlayAudioSettingViewController.xib */,
 				884A39B61CB827F700627882 /* OpenUrl.swift */,
 				884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */,
 				884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */,
@@ -368,7 +368,7 @@
 				884A398D1CB3F78E00627882 /* sensorNameList.plist in Resources */,
 				884A39A61CB7B5A200627882 /* ProximitySettingViewController.xib in Resources */,
 				884A39BB1CB82B2900627882 /* OpenUrlSettingViewController.xib in Resources */,
-				884A39A01CB7AFEF00627882 /* AudioPlaySettingViewController.xib in Resources */,
+				884A39A01CB7AFEF00627882 /* PlayAudioSettingViewController.xib in Resources */,
 				884A398F1CB3F7A600627882 /* actionNameList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,9 +397,9 @@
 				884A39B11CB7D8F700627882 /* HttpReachability.swift in Sources */,
 				884A39271CB1D18400627882 /* SensorActionSettingsHelper.swift in Sources */,
 				884A38E31CB1678C00627882 /* StandbyViewController.swift in Sources */,
-				884A399F1CB7AFEF00627882 /* AudioPlaySettingViewController.swift in Sources */,
+				884A399F1CB7AFEF00627882 /* PlayAudioSettingViewController.swift in Sources */,
 				884A39BA1CB82B2900627882 /* OpenUrlSettingViewController.swift in Sources */,
-				884A399E1CB7AFEF00627882 /* AudioPlay.swift in Sources */,
+				884A399E1CB7AFEF00627882 /* PlayAudio.swift in Sources */,
 				884A39AD1CB7C90700627882 /* ShakeSettingViewController.swift in Sources */,
 				884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */,
 				884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */,
