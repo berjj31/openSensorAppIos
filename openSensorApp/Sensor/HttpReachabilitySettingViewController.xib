@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HttpReachabilitySettingViewController" customModule="openSensorApp" customModuleProvider="target">
+            <connections>
+                <outlet property="urlTextField" destination="Gel-tF-yFZ" id="43N-TC-t35"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HlX-Rx-zDn" userLabel="Continer View">
+                    <rect key="frame" x="180" y="130" width="240" height="340"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO1-0c-ChD">
+                            <rect key="frame" x="65" y="303" width="111" height="30"/>
+                            <state key="normal" title="Select action"/>
+                            <connections>
+                                <action selector="selectActionButtonTapped" destination="-1" eventType="touchUpInside" id="3Ol-Ft-0nF"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gel-tF-yFZ">
+                            <rect key="frame" x="0.0" y="155" width="240" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="getText:" destination="-1" eventType="editingDidEndOnExit" id="6w2-2r-e5E"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Fds-hw-lOc"/>
+                        <constraint firstAttribute="height" constant="340" id="bhP-Ug-dei"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HlX-Rx-zDn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FLe-9K-hSb"/>
+                <constraint firstItem="HlX-Rx-zDn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Xow-fZ-Tdy"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

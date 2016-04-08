@@ -5,5 +5,6 @@
 	<string>Brightness</string>
 	<string>Proximity</string>
 	<string>Shake</string>
+	<string>HttpReachability</string>
 </array>
 </plist>
