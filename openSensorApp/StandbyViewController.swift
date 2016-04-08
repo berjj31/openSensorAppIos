@@ -71,7 +71,7 @@ class StandbyViewController: UIViewController {
     }
     
     @IBAction func settingsButtonTapped() {
-        runningAction = nil
+        stopAction()
         stopSensors()
         let generalSettingsTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("GeneralSettings")
         let navigationController = UINavigationController(rootViewController: generalSettingsTableViewController)
