@@ -1,13 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--General Settings Table View Controller-->
+        <scene sceneID="Uex-xA-zI4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVZ-lm-ajr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="GeneralSettings" id="W0q-BI-Frg" customClass="GeneralSettingsTableViewController" customModule="openSensorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q64-Su-q2n"/>
+                        <viewControllerLayoutGuide type="bottom" id="pGW-Du-wkG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92d-Uw-BMd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwx-UV-8bQ">
+                                <rect key="frame" x="220" y="28" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="HMh-Iu-KVE"/>
+                                    <constraint firstAttribute="height" constant="30" id="MUV-L1-A7g"/>
+                                </constraints>
+                                <state key="normal" title="Add new sensor-action"/>
+                                <connections>
+                                    <action selector="addNewActionSensorButtonTapped" destination="W0q-BI-Frg" eventType="touchUpInside" id="97w-hz-A1e"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="umF-Cu-fyS">
+                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="W0q-BI-Frg" id="3of-JY-BhA"/>
+                                    <outlet property="delegate" destination="W0q-BI-Frg" id="JGL-Tb-kXM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pGW-Du-wkG" firstAttribute="top" secondItem="umF-Cu-fyS" secondAttribute="bottom" id="Gat-nb-6D5"/>
+                            <constraint firstItem="umF-Cu-fyS" firstAttribute="leading" secondItem="92d-Uw-BMd" secondAttribute="leadingMargin" constant="-20" id="Ib9-Ug-oTM"/>
+                            <constraint firstItem="Zwx-UV-8bQ" firstAttribute="top" secondItem="q64-Su-q2n" secondAttribute="bottom" constant="8" id="TbS-T3-Nse"/>
+                            <constraint firstItem="umF-Cu-fyS" firstAttribute="top" secondItem="Zwx-UV-8bQ" secondAttribute="bottom" constant="14" id="YJb-sR-YVC"/>
+                            <constraint firstItem="Zwx-UV-8bQ" firstAttribute="centerX" secondItem="92d-Uw-BMd" secondAttribute="centerX" id="gip-Md-zz7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="umF-Cu-fyS" secondAttribute="trailing" constant="-20" id="qgL-3T-2WX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="umF-Cu-fyS" id="OGX-Oh-W14"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="171" y="-1020"/>
+        </scene>
+        <!--Standby View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StandbyViewController" customModule="openSensorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +67,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCG-6c-kTm">
+                                <rect key="frame" x="523" y="20" width="57" height="30"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="settingsButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFC-cX-46P"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ucd-v1-s4X">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MCG-6c-kTm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T8G-fX-roI"/>
+                            <constraint firstItem="MCG-6c-kTm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bxE-81-urm"/>
+                            <constraint firstItem="MCG-6c-kTm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fKR-K9-JRK"/>
+                            <constraint firstItem="MCG-6c-kTm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rxb-PO-Fg8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="T8G-fX-roI"/>
+                                <exclude reference="rxb-PO-Fg8"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-499" y="-1020"/>
         </scene>
     </scenes>
 </document>

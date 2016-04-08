@@ -8,12 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		884A38E11CB1678C00627882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A38E01CB1678C00627882 /* AppDelegate.swift */; };
-		884A38E31CB1678C00627882 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A38E21CB1678C00627882 /* ViewController.swift */; };
+		884A38E31CB1678C00627882 /* StandbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A38E21CB1678C00627882 /* StandbyViewController.swift */; };
 		884A38E61CB1678C00627882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884A38E41CB1678C00627882 /* Main.storyboard */; };
 		884A38E81CB1678C00627882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884A38E71CB1678C00627882 /* Assets.xcassets */; };
 		884A38EB1CB1678C00627882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884A38E91CB1678C00627882 /* LaunchScreen.storyboard */; };
 		884A38F61CB1678C00627882 /* openSensorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A38F51CB1678C00627882 /* openSensorAppTests.swift */; };
 		884A39011CB1678C00627882 /* openSensorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39001CB1678C00627882 /* openSensorAppUITests.swift */; };
+		884A39171CB169A700627882 /* Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39161CB169A700627882 /* Brightness.swift */; };
+		884A39191CB169CC00627882 /* AudioPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39181CB169CC00627882 /* AudioPlay.swift */; };
+		884A391E1CB16B8D00627882 /* BrightnessSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A391C1CB16B8D00627882 /* BrightnessSettingViewController.swift */; };
+		884A391F1CB16B8D00627882 /* BrightnessSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A391D1CB16B8D00627882 /* BrightnessSettingViewController.xib */; };
+		884A39231CB1C5BC00627882 /* GeneralSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39221CB1C5BC00627882 /* GeneralSettingsTableViewController.swift */; };
+		884A39271CB1D18400627882 /* SensorActionSettingsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39261CB1D18400627882 /* SensorActionSettingsHelper.swift */; };
+		884A392B1CB1ECDD00627882 /* SensorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A392A1CB1ECDD00627882 /* SensorProtocol.swift */; };
+		884A392F1CB1F10B00627882 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A392E1CB1F10B00627882 /* ActionProtocol.swift */; };
+		884A393A1CB2D12D00627882 /* SelectSensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39381CB2D12D00627882 /* SelectSensorViewController.swift */; };
+		884A393B1CB2D12D00627882 /* SelectSensorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39391CB2D12D00627882 /* SelectSensorViewController.xib */; };
+		884A393E1CB2D14A00627882 /* SelectActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A393C1CB2D14A00627882 /* SelectActionViewController.swift */; };
+		884A393F1CB2D14A00627882 /* SelectActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A393D1CB2D14A00627882 /* SelectActionViewController.xib */; };
+		884A39421CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39401CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift */; };
+		884A39431CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39411CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib */; };
+		884A39461CB2D4AB00627882 /* AudioPlaySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39441CB2D4AB00627882 /* AudioPlaySettingViewController.swift */; };
+		884A39471CB2D4AB00627882 /* AudioPlaySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39451CB2D4AB00627882 /* AudioPlaySettingViewController.xib */; };
+		884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39881CB37F4F00627882 /* ErrorAlertHelper.swift */; };
+		884A398B1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A398A1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift */; };
+		884A398D1CB3F78E00627882 /* sensorNameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884A398C1CB3F78E00627882 /* sensorNameList.plist */; };
+		884A398F1CB3F7A600627882 /* actionNameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884A398E1CB3F7A600627882 /* actionNameList.plist */; };
+		884A39911CB52A2900627882 /* ActionSettingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39901CB52A2900627882 /* ActionSettingViewControllerProtocol.swift */; };
+		884A39931CB52ED600627882 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884A39921CB52ED600627882 /* MediaPlayer.framework */; };
+		884A39951CB7ACD000627882 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 884A39941CB7ACD000627882 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +59,7 @@
 /* Begin PBXFileReference section */
 		884A38DD1CB1678C00627882 /* openSensorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openSensorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884A38E01CB1678C00627882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		884A38E21CB1678C00627882 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		884A38E21CB1678C00627882 /* StandbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandbyViewController.swift; sourceTree = "<group>"; };
 		884A38E51CB1678C00627882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		884A38E71CB1678C00627882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		884A38EA1CB1678C00627882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +70,29 @@
 		884A38FC1CB1678C00627882 /* openSensorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openSensorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884A39001CB1678C00627882 /* openSensorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openSensorAppUITests.swift; sourceTree = "<group>"; };
 		884A39021CB1678C00627882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884A39161CB169A700627882 /* Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brightness.swift; sourceTree = "<group>"; };
+		884A39181CB169CC00627882 /* AudioPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlay.swift; sourceTree = "<group>"; };
+		884A391C1CB16B8D00627882 /* BrightnessSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessSettingViewController.swift; sourceTree = "<group>"; };
+		884A391D1CB16B8D00627882 /* BrightnessSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrightnessSettingViewController.xib; sourceTree = "<group>"; };
+		884A39221CB1C5BC00627882 /* GeneralSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTableViewController.swift; sourceTree = "<group>"; };
+		884A39261CB1D18400627882 /* SensorActionSettingsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorActionSettingsHelper.swift; sourceTree = "<group>"; };
+		884A392A1CB1ECDD00627882 /* SensorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorProtocol.swift; sourceTree = "<group>"; };
+		884A392E1CB1F10B00627882 /* ActionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
+		884A39381CB2D12D00627882 /* SelectSensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSensorViewController.swift; sourceTree = "<group>"; };
+		884A39391CB2D12D00627882 /* SelectSensorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectSensorViewController.xib; sourceTree = "<group>"; };
+		884A393C1CB2D14A00627882 /* SelectActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectActionViewController.swift; sourceTree = "<group>"; };
+		884A393D1CB2D14A00627882 /* SelectActionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectActionViewController.xib; sourceTree = "<group>"; };
+		884A39401CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveSensorActionSettingsViewController.swift; sourceTree = "<group>"; };
+		884A39411CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveSensorActionSettingsViewController.xib; sourceTree = "<group>"; };
+		884A39441CB2D4AB00627882 /* AudioPlaySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlaySettingViewController.swift; sourceTree = "<group>"; };
+		884A39451CB2D4AB00627882 /* AudioPlaySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlaySettingViewController.xib; sourceTree = "<group>"; };
+		884A39881CB37F4F00627882 /* ErrorAlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAlertHelper.swift; sourceTree = "<group>"; };
+		884A398A1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorSettingViewControllerProtocol.swift; sourceTree = "<group>"; };
+		884A398C1CB3F78E00627882 /* sensorNameList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sensorNameList.plist; path = ../sensorNameList.plist; sourceTree = "<group>"; };
+		884A398E1CB3F7A600627882 /* actionNameList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = actionNameList.plist; path = ../actionNameList.plist; sourceTree = "<group>"; };
+		884A39901CB52A2900627882 /* ActionSettingViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSettingViewControllerProtocol.swift; sourceTree = "<group>"; };
+		884A39921CB52ED600627882 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		884A39941CB7ACD000627882 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A39931CB52ED600627882 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +124,8 @@
 		884A38D41CB1678C00627882 = {
 			isa = PBXGroup;
 			children = (
+				884A39941CB7ACD000627882 /* README.md */,
+				884A39921CB52ED600627882 /* MediaPlayer.framework */,
 				884A38DF1CB1678C00627882 /* openSensorApp */,
 				884A38F41CB1678C00627882 /* openSensorAppTests */,
 				884A38FF1CB1678C00627882 /* openSensorAppUITests */,
@@ -98,11 +147,24 @@
 			isa = PBXGroup;
 			children = (
 				884A38E01CB1678C00627882 /* AppDelegate.swift */,
-				884A38E21CB1678C00627882 /* ViewController.swift */,
+				884A38E21CB1678C00627882 /* StandbyViewController.swift */,
+				884A39221CB1C5BC00627882 /* GeneralSettingsTableViewController.swift */,
+				884A39381CB2D12D00627882 /* SelectSensorViewController.swift */,
+				884A39391CB2D12D00627882 /* SelectSensorViewController.xib */,
+				884A393C1CB2D14A00627882 /* SelectActionViewController.swift */,
+				884A393D1CB2D14A00627882 /* SelectActionViewController.xib */,
+				884A39401CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift */,
+				884A39411CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib */,
+				884A39141CB1697600627882 /* Sensor */,
+				884A39151CB1697E00627882 /* Action */,
+				884A39261CB1D18400627882 /* SensorActionSettingsHelper.swift */,
+				884A39881CB37F4F00627882 /* ErrorAlertHelper.swift */,
 				884A38E41CB1678C00627882 /* Main.storyboard */,
-				884A38E71CB1678C00627882 /* Assets.xcassets */,
 				884A38E91CB1678C00627882 /* LaunchScreen.storyboard */,
+				884A38E71CB1678C00627882 /* Assets.xcassets */,
 				884A38EC1CB1678C00627882 /* Info.plist */,
+				884A398C1CB3F78E00627882 /* sensorNameList.plist */,
+				884A398E1CB3F7A600627882 /* actionNameList.plist */,
 			);
 			path = openSensorApp;
 			sourceTree = "<group>";
@@ -123,6 +185,31 @@
 				884A39021CB1678C00627882 /* Info.plist */,
 			);
 			path = openSensorAppUITests;
+			sourceTree = "<group>";
+		};
+		884A39141CB1697600627882 /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				884A392A1CB1ECDD00627882 /* SensorProtocol.swift */,
+				884A398A1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift */,
+				884A39161CB169A700627882 /* Brightness.swift */,
+				884A391C1CB16B8D00627882 /* BrightnessSettingViewController.swift */,
+				884A391D1CB16B8D00627882 /* BrightnessSettingViewController.xib */,
+			);
+			path = Sensor;
+			sourceTree = "<group>";
+		};
+		884A39151CB1697E00627882 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				884A392E1CB1F10B00627882 /* ActionProtocol.swift */,
+				884A39901CB52A2900627882 /* ActionSettingViewControllerProtocol.swift */,
+				884A39181CB169CC00627882 /* AudioPlay.swift */,
+				884A39441CB2D4AB00627882 /* AudioPlaySettingViewController.swift */,
+				884A39451CB2D4AB00627882 /* AudioPlaySettingViewController.xib */,
+			);
+			name = Action;
+			path = Sensor/Action;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +280,7 @@
 				TargetAttributes = {
 					884A38DC1CB1678C00627882 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 942XTY26NK;
 					};
 					884A38F01CB1678C00627882 = {
 						CreatedOnToolsVersion = 7.3;
@@ -229,9 +317,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A39471CB2D4AB00627882 /* AudioPlaySettingViewController.xib in Resources */,
+				884A393B1CB2D12D00627882 /* SelectSensorViewController.xib in Resources */,
+				884A393F1CB2D14A00627882 /* SelectActionViewController.xib in Resources */,
+				884A39431CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib in Resources */,
 				884A38EB1CB1678C00627882 /* LaunchScreen.storyboard in Resources */,
 				884A38E81CB1678C00627882 /* Assets.xcassets in Resources */,
+				884A391F1CB16B8D00627882 /* BrightnessSettingViewController.xib in Resources */,
 				884A38E61CB1678C00627882 /* Main.storyboard in Resources */,
+				884A398D1CB3F78E00627882 /* sensorNameList.plist in Resources */,
+				884A398F1CB3F7A600627882 /* actionNameList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +351,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884A38E31CB1678C00627882 /* ViewController.swift in Sources */,
+				884A39461CB2D4AB00627882 /* AudioPlaySettingViewController.swift in Sources */,
+				884A39911CB52A2900627882 /* ActionSettingViewControllerProtocol.swift in Sources */,
+				884A39271CB1D18400627882 /* SensorActionSettingsHelper.swift in Sources */,
+				884A38E31CB1678C00627882 /* StandbyViewController.swift in Sources */,
+				884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */,
+				884A391E1CB16B8D00627882 /* BrightnessSettingViewController.swift in Sources */,
+				884A392B1CB1ECDD00627882 /* SensorProtocol.swift in Sources */,
+				884A392F1CB1F10B00627882 /* ActionProtocol.swift in Sources */,
+				884A393A1CB2D12D00627882 /* SelectSensorViewController.swift in Sources */,
+				884A39171CB169A700627882 /* Brightness.swift in Sources */,
+				884A39191CB169CC00627882 /* AudioPlay.swift in Sources */,
+				884A39951CB7ACD000627882 /* README.md in Sources */,
+				884A393E1CB2D14A00627882 /* SelectActionViewController.swift in Sources */,
+				884A398B1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift in Sources */,
+				884A39421CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift in Sources */,
+				884A39231CB1C5BC00627882 /* GeneralSettingsTableViewController.swift in Sources */,
 				884A38E11CB1678C00627882 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +511,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = openSensorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oubakiou.openSensorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +525,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = openSensorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oubakiou.openSensorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +600,7 @@
 				884A39071CB1678C00627882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		884A39081CB1678C00627882 /* Build configuration list for PBXNativeTarget "openSensorAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +609,7 @@
 				884A390A1CB1678C00627882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		884A390B1CB1678C00627882 /* Build configuration list for PBXNativeTarget "openSensorAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +618,7 @@
 				884A390D1CB1678C00627882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
