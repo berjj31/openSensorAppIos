@@ -37,6 +37,9 @@
 		884A399E1CB7AFEF00627882 /* AudioPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39991CB7AFEF00627882 /* AudioPlay.swift */; };
 		884A399F1CB7AFEF00627882 /* AudioPlaySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A399A1CB7AFEF00627882 /* AudioPlaySettingViewController.swift */; };
 		884A39A01CB7AFEF00627882 /* AudioPlaySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A399B1CB7AFEF00627882 /* AudioPlaySettingViewController.xib */; };
+		884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A11CB7B2BB00627882 /* Proximity.swift */; };
+		884A39A51CB7B5A200627882 /* ProximitySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */; };
+		884A39A61CB7B5A200627882 /* ProximitySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		884A39991CB7AFEF00627882 /* AudioPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlay.swift; sourceTree = "<group>"; };
 		884A399A1CB7AFEF00627882 /* AudioPlaySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlaySettingViewController.swift; sourceTree = "<group>"; };
 		884A399B1CB7AFEF00627882 /* AudioPlaySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlaySettingViewController.xib; sourceTree = "<group>"; };
+		884A39A11CB7B2BB00627882 /* Proximity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proximity.swift; sourceTree = "<group>"; };
+		884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximitySettingViewController.swift; sourceTree = "<group>"; };
+		884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProximitySettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,9 @@
 				884A39161CB169A700627882 /* Brightness.swift */,
 				884A391C1CB16B8D00627882 /* BrightnessSettingViewController.swift */,
 				884A391D1CB16B8D00627882 /* BrightnessSettingViewController.xib */,
+				884A39A11CB7B2BB00627882 /* Proximity.swift */,
+				884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */,
+				884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */,
 			);
 			path = Sensor;
 			sourceTree = "<group>";
@@ -324,6 +333,7 @@
 				884A391F1CB16B8D00627882 /* BrightnessSettingViewController.xib in Resources */,
 				884A38E61CB1678C00627882 /* Main.storyboard in Resources */,
 				884A398D1CB3F78E00627882 /* sensorNameList.plist in Resources */,
+				884A39A61CB7B5A200627882 /* ProximitySettingViewController.xib in Resources */,
 				884A39A01CB7AFEF00627882 /* AudioPlaySettingViewController.xib in Resources */,
 				884A398F1CB3F7A600627882 /* actionNameList.plist in Resources */,
 			);
@@ -355,8 +365,10 @@
 				884A399F1CB7AFEF00627882 /* AudioPlaySettingViewController.swift in Sources */,
 				884A399E1CB7AFEF00627882 /* AudioPlay.swift in Sources */,
 				884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */,
+				884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */,
 				884A391E1CB16B8D00627882 /* BrightnessSettingViewController.swift in Sources */,
 				884A392B1CB1ECDD00627882 /* SensorProtocol.swift in Sources */,
+				884A39A51CB7B5A200627882 /* ProximitySettingViewController.swift in Sources */,
 				884A393A1CB2D12D00627882 /* SelectSensorViewController.swift in Sources */,
 				884A399D1CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift in Sources */,
 				884A39171CB169A700627882 /* Brightness.swift in Sources */,

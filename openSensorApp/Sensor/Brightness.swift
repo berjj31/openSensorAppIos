@@ -12,7 +12,6 @@ import UIKit
 @objc(Brightness)
 class Brightness: NSObject, SensorProtocol {
     
-    let sensorName = "Brightness"
     var standbyViewController: StandbyViewController?
     var sensorActionSettings: Array<Dictionary<String, AnyObject>> = []
     
