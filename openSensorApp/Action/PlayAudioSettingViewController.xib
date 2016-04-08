@@ -5,9 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioPlaySettingViewController" customModule="openSensorApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayAudioSettingViewController">
             <connections>
-                <outlet property="tableView" destination="jqd-fj-0Fo" id="1jo-9y-3hI"/>
+                <outlet property="searchTextField" destination="3nC-lu-3yT" id="2UQ-FT-lUp"/>
+                <outlet property="tableView" destination="0Xt-S1-iBi" id="BEy-lo-1SK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,23 +17,36 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jqd-fj-0Fo">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="get wild" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-lu-3yT">
+                    <rect key="frame" x="125" y="80" width="350" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="1Ry-vm-4Uh"/>
+                        <constraint firstAttribute="height" constant="30" id="bmo-TZ-vmp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="getText:" destination="-1" eventType="editingDidEndOnExit" id="q6i-Bd-G2X"/>
+                    </connections>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Xt-S1-iBi">
+                    <rect key="frame" x="0.0" y="120" width="600" height="480"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="q8J-0l-JPZ"/>
-                        <outlet property="delegate" destination="-1" id="lRc-Jc-6o3"/>
+                        <outlet property="dataSource" destination="-1" id="kpL-vp-AsI"/>
+                        <outlet property="delegate" destination="-1" id="OZ3-Ef-nEi"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="jqd-fj-0Fo" secondAttribute="trailing" id="3X1-QN-16I"/>
-                <constraint firstItem="jqd-fj-0Fo" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="CuG-oU-WPk"/>
-                <constraint firstItem="jqd-fj-0Fo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hu7-wj-H48"/>
-                <constraint firstItem="jqd-fj-0Fo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="N7A-vL-64s"/>
-                <constraint firstAttribute="bottom" secondItem="jqd-fj-0Fo" secondAttribute="bottom" id="PgW-DH-RRK"/>
-                <constraint firstItem="jqd-fj-0Fo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="XA4-fa-PKl"/>
+                <constraint firstAttribute="trailing" secondItem="0Xt-S1-iBi" secondAttribute="trailing" id="1dX-6C-egJ"/>
+                <constraint firstItem="3nC-lu-3yT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="22Z-HZ-KfN"/>
+                <constraint firstItem="0Xt-S1-iBi" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="2yx-6T-ONC"/>
+                <constraint firstItem="0Xt-S1-iBi" firstAttribute="top" secondItem="3nC-lu-3yT" secondAttribute="bottom" constant="10" id="4ax-9H-F6n"/>
+                <constraint firstItem="0Xt-S1-iBi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qt6-dB-iIS"/>
+                <constraint firstAttribute="bottom" secondItem="0Xt-S1-iBi" secondAttribute="bottom" id="ajV-2F-KDY"/>
+                <constraint firstItem="3nC-lu-3yT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wLf-uK-djl"/>
             </constraints>
         </view>
     </objects>

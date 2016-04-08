@@ -14,6 +14,7 @@ import MediaPlayer
 class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ActionSettingViewControllerProtocol {
     
     @IBOutlet var tableView: UITableView?
+    @IBOutlet var searchTextField: UITextField?
     
     var albumList: Array<MPMediaItemCollection> = []
     var songList: Array<Array<MPMediaItem>> = []
@@ -32,6 +33,7 @@ class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, U
     
     internal func setup() {
         albumList = MPMediaQuery.albumsQuery().collections! as [MPMediaItemCollection]
+        songList = []
         for album in albumList {
             songList.append(album.items)
         }
@@ -64,7 +66,15 @@ class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, U
         
         // Configure the cell...
         let song = songList[indexPath.section][indexPath.row] as MPMediaItem
-        cell.textLabel?.text = song.valueForProperty(MPMediaItemPropertyTitle) as? String
+        var labelText = ""
+        if song.cloudItem {
+            labelText += "[cloud]"
+        }
+        if song.protectedAsset {
+            labelText += "[DRM]"
+        }
+        labelText += (song.valueForProperty(MPMediaItemPropertyTitle) as? String)!
+        cell.textLabel?.text = labelText
         return cell
     }
     
@@ -91,5 +101,21 @@ class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, U
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func getText(sender: UITextField) {
+        search(sender.text!)
+    }
+    
+    internal func search(searchWord: String) {
+        let query = MPMediaQuery.albumsQuery()
+        let predicate = MPMediaPropertyPredicate(value: searchWord, forProperty: MPMediaItemPropertyTitle, comparisonType: MPMediaPredicateComparison.Contains)
+        query.addFilterPredicate(predicate)
+        albumList = query.collections!
+        songList = []
+        for album in albumList {
+            songList.append(album.items)
+        }
+        tableView?.reloadData()
+    }
 
 }
