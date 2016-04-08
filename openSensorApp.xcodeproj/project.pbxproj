@@ -47,9 +47,9 @@
 		884A39B11CB7D8F700627882 /* HttpReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B01CB7D8F700627882 /* HttpReachability.swift */; };
 		884A39B41CB7E2EE00627882 /* HttpReachabilitySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B21CB7E2EE00627882 /* HttpReachabilitySettingViewController.swift */; };
 		884A39B51CB7E2EE00627882 /* HttpReachabilitySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39B31CB7E2EE00627882 /* HttpReachabilitySettingViewController.xib */; };
-		884A39B71CB827F700627882 /* OpenWebBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B61CB827F700627882 /* OpenWebBrowser.swift */; };
-		884A39BA1CB82B2900627882 /* OpenWebBrowserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B81CB82B2900627882 /* OpenWebBrowserSettingViewController.swift */; };
-		884A39BB1CB82B2900627882 /* OpenWebBrowserSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39B91CB82B2900627882 /* OpenWebBrowserSettingViewController.xib */; };
+		884A39B71CB827F700627882 /* OpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B61CB827F700627882 /* OpenUrl.swift */; };
+		884A39BA1CB82B2900627882 /* OpenUrlSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */; };
+		884A39BB1CB82B2900627882 /* OpenUrlSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,9 +116,9 @@
 		884A39B01CB7D8F700627882 /* HttpReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpReachability.swift; sourceTree = "<group>"; };
 		884A39B21CB7E2EE00627882 /* HttpReachabilitySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpReachabilitySettingViewController.swift; sourceTree = "<group>"; };
 		884A39B31CB7E2EE00627882 /* HttpReachabilitySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpReachabilitySettingViewController.xib; sourceTree = "<group>"; };
-		884A39B61CB827F700627882 /* OpenWebBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWebBrowser.swift; sourceTree = "<group>"; };
-		884A39B81CB82B2900627882 /* OpenWebBrowserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWebBrowserSettingViewController.swift; sourceTree = "<group>"; };
-		884A39B91CB82B2900627882 /* OpenWebBrowserSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenWebBrowserSettingViewController.xib; sourceTree = "<group>"; };
+		884A39B61CB827F700627882 /* OpenUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrl.swift; sourceTree = "<group>"; };
+		884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrlSettingViewController.swift; sourceTree = "<group>"; };
+		884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenUrlSettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,9 +243,9 @@
 				884A39991CB7AFEF00627882 /* AudioPlay.swift */,
 				884A399A1CB7AFEF00627882 /* AudioPlaySettingViewController.swift */,
 				884A399B1CB7AFEF00627882 /* AudioPlaySettingViewController.xib */,
-				884A39B61CB827F700627882 /* OpenWebBrowser.swift */,
-				884A39B81CB82B2900627882 /* OpenWebBrowserSettingViewController.swift */,
-				884A39B91CB82B2900627882 /* OpenWebBrowserSettingViewController.xib */,
+				884A39B61CB827F700627882 /* OpenUrl.swift */,
+				884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */,
+				884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -367,7 +367,7 @@
 				884A38E61CB1678C00627882 /* Main.storyboard in Resources */,
 				884A398D1CB3F78E00627882 /* sensorNameList.plist in Resources */,
 				884A39A61CB7B5A200627882 /* ProximitySettingViewController.xib in Resources */,
-				884A39BB1CB82B2900627882 /* OpenWebBrowserSettingViewController.xib in Resources */,
+				884A39BB1CB82B2900627882 /* OpenUrlSettingViewController.xib in Resources */,
 				884A39A01CB7AFEF00627882 /* AudioPlaySettingViewController.xib in Resources */,
 				884A398F1CB3F7A600627882 /* actionNameList.plist in Resources */,
 			);
@@ -398,7 +398,7 @@
 				884A39271CB1D18400627882 /* SensorActionSettingsHelper.swift in Sources */,
 				884A38E31CB1678C00627882 /* StandbyViewController.swift in Sources */,
 				884A399F1CB7AFEF00627882 /* AudioPlaySettingViewController.swift in Sources */,
-				884A39BA1CB82B2900627882 /* OpenWebBrowserSettingViewController.swift in Sources */,
+				884A39BA1CB82B2900627882 /* OpenUrlSettingViewController.swift in Sources */,
 				884A399E1CB7AFEF00627882 /* AudioPlay.swift in Sources */,
 				884A39AD1CB7C90700627882 /* ShakeSettingViewController.swift in Sources */,
 				884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */,
@@ -410,7 +410,7 @@
 				884A39A51CB7B5A200627882 /* ProximitySettingViewController.swift in Sources */,
 				884A393A1CB2D12D00627882 /* SelectSensorViewController.swift in Sources */,
 				884A399D1CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift in Sources */,
-				884A39B71CB827F700627882 /* OpenWebBrowser.swift in Sources */,
+				884A39B71CB827F700627882 /* OpenUrl.swift in Sources */,
 				884A39171CB169A700627882 /* Brightness.swift in Sources */,
 				884A393E1CB2D14A00627882 /* SelectActionViewController.swift in Sources */,
 				884A399C1CB7AFEF00627882 /* ActionProtocol.swift in Sources */,

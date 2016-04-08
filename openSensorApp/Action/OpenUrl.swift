@@ -1,5 +1,5 @@
 //
-//  OpenWebView.swift
+//  OpenWebBrowser.swift
 //  openSensorApp
 //
 //  Created by ouba on 2016/04/09.
@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-@objc(OpenWebBrowser)
-class OpenWebBrowser: NSObject, ActionProtocol {
+@objc(OpenUrl)
+class OpenUrl: NSObject, ActionProtocol {
     
     var standbyViewController:StandbyViewController?
     

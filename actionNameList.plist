@@ -3,6 +3,6 @@
 <plist version="1.0">
 <array>
 	<string>AudioPlay</string>
-	<string>OpenWebBrowser</string>
+	<string>OpenUrl</string>
 </array>
 </plist>

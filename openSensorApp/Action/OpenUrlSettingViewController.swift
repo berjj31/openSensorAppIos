@@ -8,8 +8,8 @@
 
 import UIKit
 
-@objc(OpenWebBrowserSettingViewController)
-class OpenWebBrowserSettingViewController: UIViewController, ActionSettingViewControllerProtocol {
+@objc(OpenUrlSettingViewController)
+class OpenUrlSettingViewController: UIViewController, ActionSettingViewControllerProtocol {
 
     @IBOutlet var urlTextField: UITextField?
     
@@ -40,7 +40,7 @@ class OpenWebBrowserSettingViewController: UIViewController, ActionSettingViewCo
 
     @IBAction func saveSensorActionButtonTapped() {
         saveEditingActionSetting([
-            "actionName" : "OpenWebBrowser",
+            "actionName" : "OpenUrl",
             "actionSettingDisplayName" : getActionSettingDisplayName(),
             "url" : (urlTextField?.text)!
             ])
@@ -48,7 +48,7 @@ class OpenWebBrowserSettingViewController: UIViewController, ActionSettingViewCo
     }
     
     func getActionSettingDisplayName() -> String {
-        return "Open WebBrowser " + (urlTextField?.text)!
+        return "Open Url " + (urlTextField?.text)!
     }
 
 }
