@@ -15,7 +15,6 @@ class ErrorAlertHelper {
         let alertController = UIAlertController(title: error.localizedDescription, message: error.localizedFailureReason, preferredStyle: .Alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
             print(error.localizedDescription)
-            print(error.localizedFailureReason)
             })
         
         parentViewController.presentViewController(alertController, animated: true, completion: nil)

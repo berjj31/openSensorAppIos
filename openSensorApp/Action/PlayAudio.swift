@@ -15,17 +15,26 @@ class PlayAudio: NSObject, ActionProtocol, AVAudioPlayerDelegate {
     var standbyViewController:StandbyViewController?
     var audio: AVAudioPlayer?
     
-    internal func run(actionSettings: Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) {
+    internal func run(actionSettings: Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) throws {
         self.standbyViewController = standbyViewController
-        let intSongId = actionSettings["mediaItemPersistentID"] as! Int
-        let item: MPMediaItem = getMediaItemBySongId(intSongId as NSNumber)
+        let stringSongId = actionSettings["mediaItemPersistentID"] as! String
+        let songId = NSNumber(unsignedLongLong: UInt64(stringSongId)!) as NSNumber
+        let item: MPMediaItem = getMediaItemBySongId(songId)
+        if item.cloudItem {
+            let userInfo: [NSObject: AnyObject] = [NSLocalizedDescriptionKey: "audio on cloud"]
+            throw NSError.init(domain: "PlayAudio", code: -1, userInfo: userInfo)
+        }
+        if item.protectedAsset {
+            let userInfo: [NSObject: AnyObject] = [NSLocalizedDescriptionKey: "DRM protected audio"]
+            throw NSError.init(domain: "PlayAudio", code: -2, userInfo: userInfo)
+        }
         let url: NSURL = item.valueForProperty(MPMediaItemPropertyAssetURL) as! NSURL
         do {
             audio = try AVAudioPlayer(contentsOfURL: url, fileTypeHint: nil)
             audio?.delegate = self
             audio!.play()
         } catch {
-            print(error)
+            throw error
         }
     }
     
