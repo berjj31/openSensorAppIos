@@ -9,7 +9,6 @@
         <!--General Settings Table View Controller-->
         <scene sceneID="Uex-xA-zI4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NVZ-lm-ajr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="GeneralSettings" id="W0q-BI-Frg" customClass="GeneralSettingsTableViewController" customModule="openSensorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q64-Su-q2n"/>
@@ -53,6 +52,7 @@
                         <outlet property="tableView" destination="umF-Cu-fyS" id="OGX-Oh-W14"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVZ-lm-ajr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="171" y="-1020"/>
         </scene>
@@ -93,6 +93,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="jZZ-KZ-Hw3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

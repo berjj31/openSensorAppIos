@@ -4,5 +4,6 @@
 <array>
 	<string>Brightness</string>
 	<string>Proximity</string>
+	<string>Shake</string>
 </array>
 </plist>

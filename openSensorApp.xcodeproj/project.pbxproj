@@ -31,7 +31,6 @@
 		884A398D1CB3F78E00627882 /* sensorNameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884A398C1CB3F78E00627882 /* sensorNameList.plist */; };
 		884A398F1CB3F7A600627882 /* actionNameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884A398E1CB3F7A600627882 /* actionNameList.plist */; };
 		884A39931CB52ED600627882 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884A39921CB52ED600627882 /* MediaPlayer.framework */; };
-		884A39951CB7ACD000627882 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 884A39941CB7ACD000627882 /* README.md */; };
 		884A399C1CB7AFEF00627882 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39971CB7AFEF00627882 /* ActionProtocol.swift */; };
 		884A399D1CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39981CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift */; };
 		884A399E1CB7AFEF00627882 /* AudioPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39991CB7AFEF00627882 /* AudioPlay.swift */; };
@@ -40,6 +39,11 @@
 		884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A11CB7B2BB00627882 /* Proximity.swift */; };
 		884A39A51CB7B5A200627882 /* ProximitySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */; };
 		884A39A61CB7B5A200627882 /* ProximitySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */; };
+		884A39A81CB7C5E000627882 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A71CB7C5E000627882 /* Shake.swift */; };
+		884A39AA1CB7C7EE00627882 /* ShakeFirstResponderDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39A91CB7C7EE00627882 /* ShakeFirstResponderDummy.swift */; };
+		884A39AD1CB7C90700627882 /* ShakeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39AB1CB7C90700627882 /* ShakeSettingViewController.swift */; };
+		884A39AE1CB7C90700627882 /* ShakeSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39AC1CB7C90700627882 /* ShakeSettingViewController.xib */; };
+		884A39AF1CB7D69700627882 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 884A39941CB7ACD000627882 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +103,10 @@
 		884A39A11CB7B2BB00627882 /* Proximity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proximity.swift; sourceTree = "<group>"; };
 		884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximitySettingViewController.swift; sourceTree = "<group>"; };
 		884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProximitySettingViewController.xib; sourceTree = "<group>"; };
+		884A39A71CB7C5E000627882 /* Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		884A39A91CB7C7EE00627882 /* ShakeFirstResponderDummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeFirstResponderDummy.swift; sourceTree = "<group>"; };
+		884A39AB1CB7C90700627882 /* ShakeSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeSettingViewController.swift; sourceTree = "<group>"; };
+		884A39AC1CB7C90700627882 /* ShakeSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeSettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,10 @@
 				884A39A11CB7B2BB00627882 /* Proximity.swift */,
 				884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */,
 				884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */,
+				884A39A71CB7C5E000627882 /* Shake.swift */,
+				884A39A91CB7C7EE00627882 /* ShakeFirstResponderDummy.swift */,
+				884A39AB1CB7C90700627882 /* ShakeSettingViewController.swift */,
+				884A39AC1CB7C90700627882 /* ShakeSettingViewController.xib */,
 			);
 			path = Sensor;
 			sourceTree = "<group>";
@@ -325,10 +337,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A39AF1CB7D69700627882 /* README.md in Resources */,
 				884A393B1CB2D12D00627882 /* SelectSensorViewController.xib in Resources */,
 				884A393F1CB2D14A00627882 /* SelectActionViewController.xib in Resources */,
 				884A39431CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib in Resources */,
 				884A38EB1CB1678C00627882 /* LaunchScreen.storyboard in Resources */,
+				884A39AE1CB7C90700627882 /* ShakeSettingViewController.xib in Resources */,
 				884A38E81CB1678C00627882 /* Assets.xcassets in Resources */,
 				884A391F1CB16B8D00627882 /* BrightnessSettingViewController.xib in Resources */,
 				884A38E61CB1678C00627882 /* Main.storyboard in Resources */,
@@ -364,17 +378,19 @@
 				884A38E31CB1678C00627882 /* StandbyViewController.swift in Sources */,
 				884A399F1CB7AFEF00627882 /* AudioPlaySettingViewController.swift in Sources */,
 				884A399E1CB7AFEF00627882 /* AudioPlay.swift in Sources */,
+				884A39AD1CB7C90700627882 /* ShakeSettingViewController.swift in Sources */,
 				884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */,
 				884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */,
+				884A39A81CB7C5E000627882 /* Shake.swift in Sources */,
 				884A391E1CB16B8D00627882 /* BrightnessSettingViewController.swift in Sources */,
 				884A392B1CB1ECDD00627882 /* SensorProtocol.swift in Sources */,
 				884A39A51CB7B5A200627882 /* ProximitySettingViewController.swift in Sources */,
 				884A393A1CB2D12D00627882 /* SelectSensorViewController.swift in Sources */,
 				884A399D1CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift in Sources */,
 				884A39171CB169A700627882 /* Brightness.swift in Sources */,
-				884A39951CB7ACD000627882 /* README.md in Sources */,
 				884A393E1CB2D14A00627882 /* SelectActionViewController.swift in Sources */,
 				884A399C1CB7AFEF00627882 /* ActionProtocol.swift in Sources */,
+				884A39AA1CB7C7EE00627882 /* ShakeFirstResponderDummy.swift in Sources */,
 				884A398B1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift in Sources */,
 				884A39421CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift in Sources */,
 				884A39231CB1C5BC00627882 /* GeneralSettingsTableViewController.swift in Sources */,

@@ -11,5 +11,4 @@ import Foundation
 protocol SensorProtocol {
     func startup(sensorActionIndex: Int, sensorActionSetting:Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) throws
     func stop()
-    func callback(notification: NSNotification)
 }
