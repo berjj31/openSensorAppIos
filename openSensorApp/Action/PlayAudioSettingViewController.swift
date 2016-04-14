@@ -32,11 +32,7 @@ class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, U
     }
     
     internal func setup() {
-        albumList = MPMediaQuery.albumsQuery().collections! as [MPMediaItemCollection]
-        songList = []
-        for album in albumList {
-            songList.append(album.items)
-        }
+        reloadData(MPMediaQuery.albumsQuery().collections!)
     }
     
     override func didReceiveMemoryWarning() {
@@ -103,14 +99,18 @@ class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, U
     */
     
     @IBAction func getText(sender: UITextField) {
-        search(sender.text!)
+        reloadData(search(sender.text!))
     }
     
-    internal func search(searchWord: String) {
+    internal func search(containsWord: String) -> [MPMediaItemCollection] {
         let query = MPMediaQuery.albumsQuery()
-        let predicate = MPMediaPropertyPredicate(value: searchWord, forProperty: MPMediaItemPropertyTitle, comparisonType: MPMediaPredicateComparison.Contains)
+        let predicate = MPMediaPropertyPredicate(value: containsWord, forProperty: MPMediaItemPropertyTitle, comparisonType: MPMediaPredicateComparison.Contains)
         query.addFilterPredicate(predicate)
-        albumList = query.collections!
+        return query.collections!
+    }
+    
+    internal func reloadData(albumList: [MPMediaItemCollection]) {
+        self.albumList = albumList
         songList = []
         for album in albumList {
             songList.append(album.items)
