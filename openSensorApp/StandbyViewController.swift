@@ -52,7 +52,7 @@ class StandbyViewController: UIViewController {
     }
 
     internal func dispatchAction(sensorActionSetting: Dictionary<String, AnyObject>) {
-        guard runningAction != nil else {
+        guard runningAction == nil else {
             return
         }
         
