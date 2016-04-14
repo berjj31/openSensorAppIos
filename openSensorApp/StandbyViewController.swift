@@ -52,9 +52,10 @@ class StandbyViewController: UIViewController {
     }
 
     internal func dispatchAction(sensorActionSetting: Dictionary<String, AnyObject>) {
-        if ((runningAction) != nil) {
-            return;
+        guard runningAction != nil else {
+            return
         }
+        
         let actionSetting = sensorActionSetting["actionSetting"] as! Dictionary<String, AnyObject>
         let actionName = actionSetting["actionName"] as! String
         let cls = NSClassFromString(actionName) as! NSObject.Type
