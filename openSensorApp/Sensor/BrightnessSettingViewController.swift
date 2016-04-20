@@ -45,12 +45,12 @@ class BrightnessSettingViewController: UIViewController, SensorSettingViewContro
     }
     
     @IBAction func selectActionButtonTapped() {
-        saveEditingSensorSetting([
-            "sensorName" : "Brightness",
-            "sensorSettingDisplayName" : getSensorSettingDisplayName(),
-            "threshold" : thresholdSlider.value,
-            "detectionRight" : detectionRightSwitch.on
-            ])
+        saveEditingSensorSetting(BrightnessSettings(
+            sensorName: "Brightness",
+            sensorSettingDisplayName: getSensorSettingDisplayName(),
+            threshold: thresholdSlider.value,
+            detectionRight: detectionRightSwitch.on
+        ))
         navigationController?.pushViewController(SelectActionViewController(), animated: true)
     }
     

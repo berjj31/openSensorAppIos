@@ -16,8 +16,8 @@ class OpenUrl: NSObject, ActionProtocol {
     
     internal func run(actionSettings: Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) {
         self.standbyViewController = standbyViewController
-        let stringUrl = actionSettings["url"] as! String
-        let url = NSURL(string: stringUrl)!
+        let actionSettings = OpenUrlSettings(properties: actionSettings)
+        let url = NSURL(string: actionSettings.url)!
         if UIApplication.sharedApplication().canOpenURL(url) {
             UIApplication.sharedApplication().openURL(url)
         }

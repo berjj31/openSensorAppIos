@@ -33,11 +33,11 @@ class HttpReachabilitySettingViewController: UIViewController, SensorSettingView
     }
     
     @IBAction func selectActionButtonTapped() {
-        saveEditingSensorSetting([
-            "sensorName" : "HttpReachability",
-            "sensorSettingDisplayName" : getSensorSettingDisplayName(),
-            "url" : urlTextField!.text!
-            ])
+        saveEditingSensorSetting(HttpReachabilitySettings(
+            sensorName: "HttpReachability",
+            sensorSettingDisplayName: getSensorSettingDisplayName(),
+            url: urlTextField!.text!
+        ))
         navigationController?.pushViewController(SelectActionViewController(), animated: true)
     }
     

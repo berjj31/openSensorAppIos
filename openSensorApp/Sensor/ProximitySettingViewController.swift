@@ -34,10 +34,10 @@ class ProximitySettingViewController: UIViewController, SensorSettingViewControl
     */
     
     @IBAction func selectActionButtonTapped() {
-        saveEditingSensorSetting([
-            "sensorName" : "Proximity",
-            "sensorSettingDisplayName" : getSensorSettingDisplayName(),
-            ])
+        saveEditingSensorSetting(ProximitySettings(
+            sensorName: "Proximity",
+            sensorSettingDisplayName: getSensorSettingDisplayName()
+        ))
         navigationController?.pushViewController(SelectActionViewController(), animated: true)
     }
     

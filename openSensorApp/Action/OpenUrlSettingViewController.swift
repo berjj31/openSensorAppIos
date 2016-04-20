@@ -39,11 +39,11 @@ class OpenUrlSettingViewController: UIViewController, ActionSettingViewControlle
     }
 
     @IBAction func saveSensorActionButtonTapped() {
-        saveEditingActionSetting([
-            "actionName" : "OpenUrl",
-            "actionSettingDisplayName" : getActionSettingDisplayName(),
-            "url" : (urlTextField?.text)!
-            ])
+        saveEditingActionSetting(OpenUrlSettings(
+            actionName: "OpenUrl",
+            actionSettingDisplayName: getActionSettingDisplayName(),
+            url: (urlTextField?.text)!
+        ))
         navigationController?.pushViewController(SaveSensorActionSettingsViewController(), animated: true)
     }
     

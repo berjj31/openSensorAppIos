@@ -13,9 +13,9 @@ import UIKit
 class Proximity: NSObject, SensorProtocol {
     
     var standbyViewController: StandbyViewController?
-    var sensorActionSettings: Array<Dictionary<String, AnyObject>> = []
+    var sensorActionSettings: Array<Dictionary<String, Dictionary<String, AnyObject>>> = []
     
-    internal func startup(sensorActionIndex: Int, sensorActionSetting: Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) throws {
+    internal func startup(sensorActionIndex: Int, sensorActionSetting: Dictionary<String, Dictionary<String, AnyObject>>, standbyViewController: StandbyViewController) throws {
         self.standbyViewController = standbyViewController
         self.sensorActionSettings.append(sensorActionSetting)
         if (self.sensorActionSettings.count == 1) {

@@ -34,10 +34,10 @@ class ShakeSettingViewController: UIViewController, SensorSettingViewControllerP
     */
     
     @IBAction func selectActionButtonTapped() {
-        saveEditingSensorSetting([
-            "sensorName" : "Shake",
-            "sensorSettingDisplayName" : getSensorSettingDisplayName(),
-            ])
+        saveEditingSensorSetting(ShakeSettings(
+            sensorName: "Shake",
+            sensorSettingDisplayName: getSensorSettingDisplayName()
+        ))
         navigationController?.pushViewController(SelectActionViewController(), animated: true)
     }
     

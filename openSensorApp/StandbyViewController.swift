@@ -28,10 +28,10 @@ class StandbyViewController: UIViewController {
     }
     
     internal func startupSensors() {
-        let sensorActionSettings: Array<Dictionary<String, AnyObject>> = SensorActionSettingsHelper.read();
+        let sensorActionSettings: Array<Dictionary<String, Dictionary<String, AnyObject>>> = SensorActionSettingsHelper.read();
         for (sensorActionIndex, sensorActionSetting) in sensorActionSettings.enumerate() {
-            let sensorSetting = sensorActionSetting["sensorSetting"] as! Dictionary<String, AnyObject>
-            let sensorName = sensorSetting["sensorName"] as! String
+            let sensorSetting = sensorActionSetting["sensorSetting"]
+            let sensorName = sensorSetting!["sensorName"] as! String
 
             let cls = NSClassFromString(sensorName) as! NSObject.Type
             runningSensors[sensorActionIndex] = (cls.init() as! SensorProtocol)
@@ -45,7 +45,7 @@ class StandbyViewController: UIViewController {
     }
     
     internal func stopSensors() {
-        let sensorActionSettings: Array<Dictionary<String, AnyObject>> = SensorActionSettingsHelper.read();
+        let sensorActionSettings: Array<Dictionary<String, Dictionary<String, AnyObject>>> = SensorActionSettingsHelper.read();
         for (sensorActionIndex, _) in sensorActionSettings.enumerate() {
             runningSensors[sensorActionIndex]!.stop()
         }

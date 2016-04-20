@@ -13,11 +13,11 @@ import UIKit
 class HttpReachability: NSObject, SensorProtocol {
     
     var standbyViewController: StandbyViewController?
-    var sensorActionSettings: Array<Dictionary<String, AnyObject>> = []
+    var sensorActionSettings: Array<Dictionary<String, Dictionary<String, AnyObject>>> = []
     var timers: Array<NSTimer> = []
-    var callbackSensorActionSetting: Dictionary<String, AnyObject> = [:]
+    var callbackSensorActionSetting: Dictionary<String, Dictionary<String, AnyObject>> = [:]
     
-    internal func startup(sensorActionIndex: Int, sensorActionSetting: Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) throws {
+    internal func startup(sensorActionIndex: Int, sensorActionSetting: Dictionary<String, Dictionary<String, AnyObject>>, standbyViewController: StandbyViewController) throws {
         self.standbyViewController = standbyViewController
         self.sensorActionSettings.append(sensorActionSetting)
         let userInfo = sensorActionSetting
@@ -25,9 +25,9 @@ class HttpReachability: NSObject, SensorProtocol {
     }
     
     internal func httpRequest(timer: NSTimer) {
-        let userInfo = timer.userInfo as! Dictionary<String, AnyObject>
-        let stringUrl = userInfo["sensorSetting"]!["url"] as! String
-        let request = NSMutableURLRequest(URL: NSURL(string: stringUrl)!)
+        let userInfo = timer.userInfo as! Dictionary<String, Dictionary<String, AnyObject>>
+        let sensorSettings =  HttpReachabilitySettings(properties: userInfo["sensorSetting"]!)
+        let request = NSMutableURLRequest(URL: NSURL(string: sensorSettings.url)!)
         request.HTTPMethod = "GET"
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {
             data, response, error in

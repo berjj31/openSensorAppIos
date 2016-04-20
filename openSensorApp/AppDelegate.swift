@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var editingSensorSetting: Dictionary<String, AnyObject> = [:]
-    var editingActionSetting: Dictionary<String, AnyObject> = [:]
+    var editingSensorSetting: SensorSettingsProtocol?
+    var editingActionSetting: ActionSettingsProtocol?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
