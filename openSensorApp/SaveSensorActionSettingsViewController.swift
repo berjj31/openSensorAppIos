@@ -13,8 +13,8 @@ class SaveSensorActionSettingsViewController: UIViewController {
     @IBOutlet var sensorSettingDisplayNameLabel: UILabel?
     @IBOutlet var actionSettingDisplayNameLabel: UILabel?
     
-    var editingSensorSetting:Dictionary<String, AnyObject> = [:]
-    var editingActionSetting:Dictionary<String, AnyObject> = [:]
+    var editingSensorSetting:SensorSettingsProtocol?
+    var editingActionSetting:ActionSettingsProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +26,8 @@ class SaveSensorActionSettingsViewController: UIViewController {
         editingSensorSetting = appDelegate.editingSensorSetting
         editingActionSetting = appDelegate.editingActionSetting
         
-        sensorSettingDisplayNameLabel?.text = editingSensorSetting["sensorSettingDisplayName"] as? String
-        actionSettingDisplayNameLabel?.text = editingActionSetting["actionSettingDisplayName"] as? String
+        sensorSettingDisplayNameLabel?.text = editingSensorSetting!.sensorName
+        actionSettingDisplayNameLabel?.text = editingActionSetting!.actionName
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,10 +48,13 @@ class SaveSensorActionSettingsViewController: UIViewController {
     
     @IBAction internal func saveButtonTapped() {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.editingSensorSetting = [:]
-        appDelegate.editingActionSetting = [:]
+        appDelegate.editingSensorSetting = nil
+        appDelegate.editingActionSetting = nil
         
-        let newSetting = ["sensorSetting":editingSensorSetting, "actionSetting":editingActionSetting]
+        let newSetting = [
+            "sensorSetting":editingSensorSetting!.toDictionary(),
+            "actionSetting":editingActionSetting!.toDictionary()
+        ]
         var currentSettings = SensorActionSettingsHelper.read()
         currentSettings.append(newSetting)
         SensorActionSettingsHelper.write(currentSettings)

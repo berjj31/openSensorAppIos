@@ -17,15 +17,15 @@ class SensorActionSettingsHelper {
         return path.stringByAppendingPathComponent(settingsFileName)
     }
     
-    static func read() -> Array<Dictionary<String, AnyObject>> {
+    static func read() -> Array<Dictionary<String, Dictionary<String, AnyObject>>> {
         let data = NSKeyedUnarchiver.unarchiveObjectWithFile(getSettingFilePath())
         if (data == nil) {
             return []
         }
-        return data as! Array<Dictionary<String, AnyObject>>
+        return data as! Array<Dictionary<String, Dictionary<String, AnyObject>>>
     }
     
-    static func write(newSensorActionSettings: Array<Dictionary<String, AnyObject>>) {
+    static func write(newSensorActionSettings: Array<Dictionary<String, Dictionary<String, AnyObject>>>) {
         NSKeyedArchiver.archiveRootObject(newSensorActionSettings, toFile: getSettingFilePath())
     }
 }

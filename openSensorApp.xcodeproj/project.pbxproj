@@ -50,6 +50,15 @@
 		884A39B71CB827F700627882 /* OpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B61CB827F700627882 /* OpenUrl.swift */; };
 		884A39BA1CB82B2900627882 /* OpenUrlSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */; };
 		884A39BB1CB82B2900627882 /* OpenUrlSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */; };
+		884A39D11CC7BC6000627882 /* BrightnessSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39D01CC7BC5F00627882 /* BrightnessSettings.swift */; };
+		884A39D31CC7BD8400627882 /* SettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39D21CC7BD8400627882 /* SettingsProtocol.swift */; };
+		884A39D51CC7BFA700627882 /* ProximitySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39D41CC7BFA700627882 /* ProximitySettings.swift */; };
+		884A39D71CC7C09700627882 /* ShakeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39D61CC7C09700627882 /* ShakeSettings.swift */; };
+		884A39D91CC7C0BB00627882 /* HttpReachabilitySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39D81CC7C0BB00627882 /* HttpReachabilitySettings.swift */; };
+		884A39DB1CC7C21600627882 /* PlayAudioSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39DA1CC7C21600627882 /* PlayAudioSettings.swift */; };
+		884A39DD1CC7C2AC00627882 /* OpenUrlSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39DC1CC7C2AC00627882 /* OpenUrlSettings.swift */; };
+		884A39DF1CC7C3B700627882 /* SensorSettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39DE1CC7C3B700627882 /* SensorSettingsProtocol.swift */; };
+		884A39E11CC7C46C00627882 /* ActionSettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39E01CC7C46C00627882 /* ActionSettingsProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +128,15 @@
 		884A39B61CB827F700627882 /* OpenUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrl.swift; sourceTree = "<group>"; };
 		884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrlSettingViewController.swift; sourceTree = "<group>"; };
 		884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenUrlSettingViewController.xib; sourceTree = "<group>"; };
+		884A39D01CC7BC5F00627882 /* BrightnessSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessSettings.swift; sourceTree = "<group>"; };
+		884A39D21CC7BD8400627882 /* SettingsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsProtocol.swift; sourceTree = "<group>"; };
+		884A39D41CC7BFA700627882 /* ProximitySettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximitySettings.swift; sourceTree = "<group>"; };
+		884A39D61CC7C09700627882 /* ShakeSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeSettings.swift; sourceTree = "<group>"; };
+		884A39D81CC7C0BB00627882 /* HttpReachabilitySettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpReachabilitySettings.swift; sourceTree = "<group>"; };
+		884A39DA1CC7C21600627882 /* PlayAudioSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAudioSettings.swift; sourceTree = "<group>"; };
+		884A39DC1CC7C2AC00627882 /* OpenUrlSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrlSettings.swift; sourceTree = "<group>"; };
+		884A39DE1CC7C3B700627882 /* SensorSettingsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorSettingsProtocol.swift; sourceTree = "<group>"; };
+		884A39E01CC7C46C00627882 /* ActionSettingsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSettingsProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +201,7 @@
 				884A393D1CB2D14A00627882 /* SelectActionViewController.xib */,
 				884A39401CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift */,
 				884A39411CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib */,
+				884A39D21CC7BD8400627882 /* SettingsProtocol.swift */,
 				884A39261CB1D18400627882 /* SensorActionSettingsHelper.swift */,
 				884A39881CB37F4F00627882 /* ErrorAlertHelper.swift */,
 				884A38E41CB1678C00627882 /* Main.storyboard */,
@@ -217,18 +236,23 @@
 			isa = PBXGroup;
 			children = (
 				884A392A1CB1ECDD00627882 /* SensorProtocol.swift */,
+				884A39DE1CC7C3B700627882 /* SensorSettingsProtocol.swift */,
 				884A398A1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift */,
 				884A39161CB169A700627882 /* Brightness.swift */,
+				884A39D01CC7BC5F00627882 /* BrightnessSettings.swift */,
 				884A391C1CB16B8D00627882 /* BrightnessSettingViewController.swift */,
 				884A391D1CB16B8D00627882 /* BrightnessSettingViewController.xib */,
 				884A39A11CB7B2BB00627882 /* Proximity.swift */,
+				884A39D41CC7BFA700627882 /* ProximitySettings.swift */,
 				884A39A31CB7B5A200627882 /* ProximitySettingViewController.swift */,
 				884A39A41CB7B5A200627882 /* ProximitySettingViewController.xib */,
 				884A39A71CB7C5E000627882 /* Shake.swift */,
 				884A39A91CB7C7EE00627882 /* ShakeFirstResponderDummy.swift */,
+				884A39D61CC7C09700627882 /* ShakeSettings.swift */,
 				884A39AB1CB7C90700627882 /* ShakeSettingViewController.swift */,
 				884A39AC1CB7C90700627882 /* ShakeSettingViewController.xib */,
 				884A39B01CB7D8F700627882 /* HttpReachability.swift */,
+				884A39D81CC7C0BB00627882 /* HttpReachabilitySettings.swift */,
 				884A39B21CB7E2EE00627882 /* HttpReachabilitySettingViewController.swift */,
 				884A39B31CB7E2EE00627882 /* HttpReachabilitySettingViewController.xib */,
 			);
@@ -239,11 +263,14 @@
 			isa = PBXGroup;
 			children = (
 				884A39971CB7AFEF00627882 /* ActionProtocol.swift */,
+				884A39E01CC7C46C00627882 /* ActionSettingsProtocol.swift */,
 				884A39981CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift */,
 				884A39991CB7AFEF00627882 /* PlayAudio.swift */,
+				884A39DA1CC7C21600627882 /* PlayAudioSettings.swift */,
 				884A399A1CB7AFEF00627882 /* PlayAudioSettingViewController.swift */,
 				884A399B1CB7AFEF00627882 /* PlayAudioSettingViewController.xib */,
 				884A39B61CB827F700627882 /* OpenUrl.swift */,
+				884A39DC1CC7C2AC00627882 /* OpenUrlSettings.swift */,
 				884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */,
 				884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */,
 			);
@@ -394,12 +421,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A39D51CC7BFA700627882 /* ProximitySettings.swift in Sources */,
 				884A39B11CB7D8F700627882 /* HttpReachability.swift in Sources */,
+				884A39D11CC7BC6000627882 /* BrightnessSettings.swift in Sources */,
 				884A39271CB1D18400627882 /* SensorActionSettingsHelper.swift in Sources */,
 				884A38E31CB1678C00627882 /* StandbyViewController.swift in Sources */,
 				884A399F1CB7AFEF00627882 /* PlayAudioSettingViewController.swift in Sources */,
+				884A39DD1CC7C2AC00627882 /* OpenUrlSettings.swift in Sources */,
 				884A39BA1CB82B2900627882 /* OpenUrlSettingViewController.swift in Sources */,
+				884A39E11CC7C46C00627882 /* ActionSettingsProtocol.swift in Sources */,
+				884A39D31CC7BD8400627882 /* SettingsProtocol.swift in Sources */,
 				884A399E1CB7AFEF00627882 /* PlayAudio.swift in Sources */,
+				884A39D91CC7C0BB00627882 /* HttpReachabilitySettings.swift in Sources */,
 				884A39AD1CB7C90700627882 /* ShakeSettingViewController.swift in Sources */,
 				884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */,
 				884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */,
@@ -411,11 +444,14 @@
 				884A393A1CB2D12D00627882 /* SelectSensorViewController.swift in Sources */,
 				884A399D1CB7AFEF00627882 /* ActionSettingViewControllerProtocol.swift in Sources */,
 				884A39B71CB827F700627882 /* OpenUrl.swift in Sources */,
+				884A39DB1CC7C21600627882 /* PlayAudioSettings.swift in Sources */,
 				884A39171CB169A700627882 /* Brightness.swift in Sources */,
 				884A393E1CB2D14A00627882 /* SelectActionViewController.swift in Sources */,
 				884A399C1CB7AFEF00627882 /* ActionProtocol.swift in Sources */,
 				884A39AA1CB7C7EE00627882 /* ShakeFirstResponderDummy.swift in Sources */,
 				884A398B1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift in Sources */,
+				884A39DF1CC7C3B700627882 /* SensorSettingsProtocol.swift in Sources */,
+				884A39D71CC7C09700627882 /* ShakeSettings.swift in Sources */,
 				884A39421CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift in Sources */,
 				884A39231CB1C5BC00627882 /* GeneralSettingsTableViewController.swift in Sources */,
 				884A38E11CB1678C00627882 /* AppDelegate.swift in Sources */,

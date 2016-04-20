@@ -17,8 +17,8 @@ class PlayAudio: NSObject, ActionProtocol, AVAudioPlayerDelegate {
     
     internal func run(actionSettings: Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) throws {
         self.standbyViewController = standbyViewController
-        let stringSongId = actionSettings["mediaItemPersistentID"] as! String
-        let songId = NSNumber(unsignedLongLong: UInt64(stringSongId)!) as NSNumber
+        let actionSettings = PlayAudioSettings(properties: actionSettings)
+        let songId = NSNumber(unsignedLongLong: UInt64(actionSettings.mediaItemPersistentID)!) as NSNumber
         let item: MPMediaItem = getMediaItemBySongId(songId)
         if item.cloudItem {
             let userInfo: [NSObject: AnyObject] = [NSLocalizedDescriptionKey: "audio on cloud"]

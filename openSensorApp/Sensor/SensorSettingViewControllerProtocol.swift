@@ -11,11 +11,11 @@ import UIKit
 
 protocol SensorSettingViewControllerProtocol {
     func getSensorSettingDisplayName() -> String
-    func saveEditingSensorSetting(editingSensorSetting: Dictionary<String, AnyObject>)
+    func saveEditingSensorSetting(editingSensorSetting: SensorSettingsProtocol)
 }
 
 extension SensorSettingViewControllerProtocol {
-    internal func saveEditingSensorSetting(editingSensorSetting: Dictionary<String, AnyObject>) {
+    internal func saveEditingSensorSetting(editingSensorSetting: SensorSettingsProtocol) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.editingSensorSetting = editingSensorSetting
     }

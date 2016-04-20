@@ -76,11 +76,11 @@ class PlayAudioSettingViewController: UIViewController, UITableViewDataSource, U
     
     internal func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedMediaItem = songList[indexPath.section][indexPath.row]
-        saveEditingActionSetting([
-            "actionName" : "PlayAudio",
-            "actionSettingDisplayName" : getActionSettingDisplayName(),
-            "mediaItemPersistentID" : String((selectedMediaItem?.persistentID)!)
-            ])
+        saveEditingActionSetting(PlayAudioSettings(
+            actionName : "PlayAudio",
+            actionSettingDisplayName : getActionSettingDisplayName(),
+            mediaItemPersistentID: String((selectedMediaItem?.persistentID)!)
+        ))
         navigationController?.pushViewController(SaveSensorActionSettingsViewController(), animated: true)
     }
     

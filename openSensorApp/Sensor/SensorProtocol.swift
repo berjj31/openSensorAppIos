@@ -9,6 +9,6 @@
 import Foundation
 
 protocol SensorProtocol {
-    func startup(sensorActionIndex: Int, sensorActionSetting:Dictionary<String, AnyObject>, standbyViewController: StandbyViewController) throws
+    func startup(sensorActionIndex: Int, sensorActionSetting:Dictionary<String, Dictionary<String, AnyObject>>, standbyViewController: StandbyViewController) throws
     func stop()
 }

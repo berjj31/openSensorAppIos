@@ -11,11 +11,11 @@ import UIKit
 
 protocol ActionSettingViewControllerProtocol {
     func getActionSettingDisplayName() -> String
-    func saveEditingActionSetting(editingActionSetting: Dictionary<String, AnyObject>)
+    func saveEditingActionSetting(editingActionSetting: ActionSettingsProtocol)
 }
 
 extension ActionSettingViewControllerProtocol {
-    internal func saveEditingActionSetting(editingActionSetting: Dictionary<String, AnyObject>) {
+    internal func saveEditingActionSetting(editingActionSetting: ActionSettingsProtocol) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.editingActionSetting = editingActionSetting
     }

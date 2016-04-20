@@ -12,7 +12,7 @@ class GeneralSettingsTableViewController: UIViewController, UITableViewDataSourc
     
     @IBOutlet var tableView: UITableView?
     
-    var sensorActionSettings: Array<Dictionary<String, AnyObject>> = []
+    var sensorActionSettings: Array<Dictionary<String, Dictionary<String, AnyObject>>> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
