@@ -3,6 +3,7 @@
 <plist version="1.0">
 <array>
 	<string>PlayAudio</string>
+	<string>Speech</string>
 	<string>OpenUrl</string>
 </array>
 </plist>
