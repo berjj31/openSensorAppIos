@@ -59,6 +59,11 @@
 		884A39DD1CC7C2AC00627882 /* OpenUrlSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39DC1CC7C2AC00627882 /* OpenUrlSettings.swift */; };
 		884A39DF1CC7C3B700627882 /* SensorSettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39DE1CC7C3B700627882 /* SensorSettingsProtocol.swift */; };
 		884A39E11CC7C46C00627882 /* ActionSettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39E01CC7C46C00627882 /* ActionSettingsProtocol.swift */; };
+		884A39E31CCD276E00627882 /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39E21CCD276E00627882 /* Speech.swift */; };
+		884A39E51CCD27AE00627882 /* SpeechSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39E41CCD27AE00627882 /* SpeechSettings.swift */; };
+		884A39E81CCD27CE00627882 /* SpeechSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39E61CCD27CE00627882 /* SpeechSettingViewController.swift */; };
+		884A39E91CCD27CE00627882 /* SpeechSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39E71CCD27CE00627882 /* SpeechSettingViewController.xib */; };
+		884A39EB1CCD2E6A00627882 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884A39EA1CCD2E6A00627882 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +142,11 @@
 		884A39DC1CC7C2AC00627882 /* OpenUrlSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrlSettings.swift; sourceTree = "<group>"; };
 		884A39DE1CC7C3B700627882 /* SensorSettingsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorSettingsProtocol.swift; sourceTree = "<group>"; };
 		884A39E01CC7C46C00627882 /* ActionSettingsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSettingsProtocol.swift; sourceTree = "<group>"; };
+		884A39E21CCD276E00627882 /* Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speech.swift; sourceTree = "<group>"; };
+		884A39E41CCD27AE00627882 /* SpeechSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSettings.swift; sourceTree = "<group>"; };
+		884A39E61CCD27CE00627882 /* SpeechSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSettingViewController.swift; sourceTree = "<group>"; };
+		884A39E71CCD27CE00627882 /* SpeechSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeechSettingViewController.xib; sourceTree = "<group>"; };
+		884A39EA1CCD2E6A00627882 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A39EB1CCD2E6A00627882 /* AVFoundation.framework in Frameworks */,
 				884A39931CB52ED600627882 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +179,7 @@
 		884A38D41CB1678C00627882 = {
 			isa = PBXGroup;
 			children = (
+				884A39EA1CCD2E6A00627882 /* AVFoundation.framework */,
 				884A39941CB7ACD000627882 /* README.md */,
 				884A39921CB52ED600627882 /* MediaPlayer.framework */,
 				884A38DF1CB1678C00627882 /* openSensorApp */,
@@ -273,6 +285,10 @@
 				884A39DC1CC7C2AC00627882 /* OpenUrlSettings.swift */,
 				884A39B81CB82B2900627882 /* OpenUrlSettingViewController.swift */,
 				884A39B91CB82B2900627882 /* OpenUrlSettingViewController.xib */,
+				884A39E21CCD276E00627882 /* Speech.swift */,
+				884A39E41CCD27AE00627882 /* SpeechSettings.swift */,
+				884A39E61CCD27CE00627882 /* SpeechSettingViewController.swift */,
+				884A39E71CCD27CE00627882 /* SpeechSettingViewController.xib */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -387,6 +403,7 @@
 				884A393F1CB2D14A00627882 /* SelectActionViewController.xib in Resources */,
 				884A39431CB2D47A00627882 /* SaveSensorActionSettingsViewController.xib in Resources */,
 				884A38EB1CB1678C00627882 /* LaunchScreen.storyboard in Resources */,
+				884A39E91CCD27CE00627882 /* SpeechSettingViewController.xib in Resources */,
 				884A39AE1CB7C90700627882 /* ShakeSettingViewController.xib in Resources */,
 				884A39B51CB7E2EE00627882 /* HttpReachabilitySettingViewController.xib in Resources */,
 				884A38E81CB1678C00627882 /* Assets.xcassets in Resources */,
@@ -421,6 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A39E81CCD27CE00627882 /* SpeechSettingViewController.swift in Sources */,
+				884A39E51CCD27AE00627882 /* SpeechSettings.swift in Sources */,
 				884A39D51CC7BFA700627882 /* ProximitySettings.swift in Sources */,
 				884A39B11CB7D8F700627882 /* HttpReachability.swift in Sources */,
 				884A39D11CC7BC6000627882 /* BrightnessSettings.swift in Sources */,
@@ -451,6 +470,7 @@
 				884A39AA1CB7C7EE00627882 /* ShakeFirstResponderDummy.swift in Sources */,
 				884A398B1CB3CBEF00627882 /* SensorSettingViewControllerProtocol.swift in Sources */,
 				884A39DF1CC7C3B700627882 /* SensorSettingsProtocol.swift in Sources */,
+				884A39E31CCD276E00627882 /* Speech.swift in Sources */,
 				884A39D71CC7C09700627882 /* ShakeSettings.swift in Sources */,
 				884A39421CB2D47A00627882 /* SaveSensorActionSettingsViewController.swift in Sources */,
 				884A39231CB1C5BC00627882 /* GeneralSettingsTableViewController.swift in Sources */,
