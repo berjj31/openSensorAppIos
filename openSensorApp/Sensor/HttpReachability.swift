@@ -29,14 +29,13 @@ class HttpReachability: NSObject, SensorProtocol {
         let sensorSettings =  HttpReachabilitySettings(properties: userInfo["sensorSetting"]!)
         let request = NSMutableURLRequest(URL: NSURL(string: sensorSettings.url)!)
         request.HTTPMethod = "GET"
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {
+        NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {
             data, response, error in
             if (error != nil) {
                 self.callbackSensorActionSetting = userInfo
                 self.callback()
             }
-        })
-        task.resume()
+        }).resume()
     }
     
     internal func stop() {

@@ -5,5 +5,6 @@
 	<string>PlayAudio</string>
 	<string>Speech</string>
 	<string>OpenUrl</string>
+	<string>SendInfraredSignalViaIrkit</string>
 </array>
 </plist>
