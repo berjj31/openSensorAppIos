@@ -64,6 +64,10 @@
 		884A39E81CCD27CE00627882 /* SpeechSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A39E61CCD27CE00627882 /* SpeechSettingViewController.swift */; };
 		884A39E91CCD27CE00627882 /* SpeechSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A39E71CCD27CE00627882 /* SpeechSettingViewController.xib */; };
 		884A39EB1CCD2E6A00627882 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884A39EA1CCD2E6A00627882 /* AVFoundation.framework */; };
+		884A3A3A1CD09B0800627882 /* SendInfraredSignalViaIrkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A3A391CD09B0800627882 /* SendInfraredSignalViaIrkit.swift */; };
+		884A3A3C1CD0A02E00627882 /* SendInfraredSignalViaIrkitSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A3A3B1CD0A02E00627882 /* SendInfraredSignalViaIrkitSettings.swift */; };
+		884A3A3F1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A3A3D1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.swift */; };
+		884A3A401CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A3A3E1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +151,10 @@
 		884A39E61CCD27CE00627882 /* SpeechSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSettingViewController.swift; sourceTree = "<group>"; };
 		884A39E71CCD27CE00627882 /* SpeechSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeechSettingViewController.xib; sourceTree = "<group>"; };
 		884A39EA1CCD2E6A00627882 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		884A3A391CD09B0800627882 /* SendInfraredSignalViaIrkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendInfraredSignalViaIrkit.swift; sourceTree = "<group>"; };
+		884A3A3B1CD0A02E00627882 /* SendInfraredSignalViaIrkitSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendInfraredSignalViaIrkitSettings.swift; sourceTree = "<group>"; };
+		884A3A3D1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendInfraredSignalViaIrkitSettingViewController.swift; sourceTree = "<group>"; };
+		884A3A3E1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendInfraredSignalViaIrkitSettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +297,10 @@
 				884A39E41CCD27AE00627882 /* SpeechSettings.swift */,
 				884A39E61CCD27CE00627882 /* SpeechSettingViewController.swift */,
 				884A39E71CCD27CE00627882 /* SpeechSettingViewController.xib */,
+				884A3A391CD09B0800627882 /* SendInfraredSignalViaIrkit.swift */,
+				884A3A3B1CD0A02E00627882 /* SendInfraredSignalViaIrkitSettings.swift */,
+				884A3A3D1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.swift */,
+				884A3A3E1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.xib */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -398,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A3A401CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.xib in Resources */,
 				884A39AF1CB7D69700627882 /* README.md in Resources */,
 				884A393B1CB2D12D00627882 /* SelectSensorViewController.xib in Resources */,
 				884A393F1CB2D14A00627882 /* SelectActionViewController.xib in Resources */,
@@ -441,11 +454,13 @@
 				884A39E81CCD27CE00627882 /* SpeechSettingViewController.swift in Sources */,
 				884A39E51CCD27AE00627882 /* SpeechSettings.swift in Sources */,
 				884A39D51CC7BFA700627882 /* ProximitySettings.swift in Sources */,
+				884A3A3C1CD0A02E00627882 /* SendInfraredSignalViaIrkitSettings.swift in Sources */,
 				884A39B11CB7D8F700627882 /* HttpReachability.swift in Sources */,
 				884A39D11CC7BC6000627882 /* BrightnessSettings.swift in Sources */,
 				884A39271CB1D18400627882 /* SensorActionSettingsHelper.swift in Sources */,
 				884A38E31CB1678C00627882 /* StandbyViewController.swift in Sources */,
 				884A399F1CB7AFEF00627882 /* PlayAudioSettingViewController.swift in Sources */,
+				884A3A3A1CD09B0800627882 /* SendInfraredSignalViaIrkit.swift in Sources */,
 				884A39DD1CC7C2AC00627882 /* OpenUrlSettings.swift in Sources */,
 				884A39BA1CB82B2900627882 /* OpenUrlSettingViewController.swift in Sources */,
 				884A39E11CC7C46C00627882 /* ActionSettingsProtocol.swift in Sources */,
@@ -455,6 +470,7 @@
 				884A39AD1CB7C90700627882 /* ShakeSettingViewController.swift in Sources */,
 				884A39891CB37F4F00627882 /* ErrorAlertHelper.swift in Sources */,
 				884A39A21CB7B2BB00627882 /* Proximity.swift in Sources */,
+				884A3A3F1CD0A10300627882 /* SendInfraredSignalViaIrkitSettingViewController.swift in Sources */,
 				884A39A81CB7C5E000627882 /* Shake.swift in Sources */,
 				884A391E1CB16B8D00627882 /* BrightnessSettingViewController.swift in Sources */,
 				884A39B41CB7E2EE00627882 /* HttpReachabilitySettingViewController.swift in Sources */,
